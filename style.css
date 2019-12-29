@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Inria+Serif&display=swap&subset=latin-ext");
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  box-shadow: none;
+}
+
+body, html {
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  height: 100%;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #F08080;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.splash {
+  position: relative;
+  display: flex;
+  height: 700px;
+  margin: 0;
+  flex-direction: column;
+  padding: 0 24px;
+  background-image: url("https://i.postimg.cc/RV7KFcDt/pexels-photo-1680214.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.page-intro {
+  margin: auto;
+  text-align: center;
+}
+
+.main-title {
+  color: #d2dae2;
+  font-size: 100px;
+  font-family: "Inria Serif", serif;
+  margin: 0;
+  font-weight: normal;
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main-subtitle {
+  color: #000000;
+  font-size: 30px;
+  font-style: italic;
+  font-family: "Inria Serif", serif;
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 12px 0 60px 0;
+  font-weight: normal;
+  text-shadow: 2px 4px 10px red;
+}
+
+.btn {
+  padding: 25px 100px 25px 100px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #F08080;
+  color: #ffffff;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #f5aeae;
+  color: #ffffff;
+  box-shadow: 2px 4px 10px 4px black;
+}
+
+.section-title {
+  position: relative;
+  margin: 0 0 60px 0;
+  text-align: center;
+  font-family: "Inria Serif", serif;
+  font-size: 50px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.section-title:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 1000px;
+  height: 6px;
+  background: #F08080;
+  left: 50%;
+  bottom: -16px;
+  margin-left: -500px;
+}
+
+.about {
+  background-color: #f0f3f3;
+}
+
+.section-intro {
+  position: relative;
+  margin: 36px 0 0 0;
+  text-align: center;
+  font-family: "Inria Serif", serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.features-wrapper {
+  display: flex;
+}
+
+.feature {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+
+.feature i:hover {
+  transform: rotate(360deg);
+}
+
+.feature i {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  color: #F08080;
+  font-size: 50px;
+  transition: all 0.5s;
+}
+
+.feature-title {
+  margin: 24px 0 0 0;
+  color: #444444;
+  font-size: 40px;
+  font-family: "Inria Serif", serif;
+}
+
+.feature-title:hover {
+  background-color: #f5aeae;
+  color: #ffffff;
+  box-shadow: 2px 4px 10px 4px black;
+}
+
+.feature-description {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+  font-family: "Inria Serif", serif;
+}
+
+.statement {
+  background-image: url("https://i.postimg.cc/ZKT9MQJM/pexels-photo-788655.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.statement p {
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Inria Serif", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.quotes-wrapper {
+  margin: 72px 0 0 0;
+  font-family: "Inria Serif", serif;
+}
+
+.quote {
+  width: 100%;
+  padding: 0 72px;
+}
+
+.flickity-button-icon {
+  fill: #F08080;
+}
+
+.quote blockquote {
+  padding: 0 36px;
+}
+
+.quote footer {
+  margin: 24px 0 40px 0;
+}
+
+section.gallery {
+  padding: 60px 0 0 0;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 72px 0 0 0;
+}
+
+.gallery-item {
+  position: relative;
+  margin: 0;
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item:before {
+  position: absolute;
+  display: none;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-family: "Inria Serif", serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.gallery-item:hover:before, .gallery-item:hover figcaption {
+  display: block;
+}
+
+.contact {
+  text-align: centre;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  border: none;
+  width: 50px;
+  height: 70px;
+  font-size: 40px;
+  line-height: 70px;
+  border-radius: 25px;
+  margin-right: 30px;
+  transition: all 0.5s;
+}
+
+.social-links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.social-links li:hover {
+  color: white;
+}
+
+.social-links li a:hover {
+  color: #3B5998;
+}
+
+.page-footer {
+  background: #FFEFD5;
+  font-size: 16px;
+  font-family: "Inria Serif", serif;
+  padding: 10px 0;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background: #FFEFD5;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navigation ul li a {
+  font-size: 14px;
+  font-family: "Inria Serif", serif;
+  color: #444444;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navigation ul li a:hover {
+  color: #F08080;
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    position: static;
+  }
+
+  .features-wrapper {
+    display: block;
+  }
+
+  .feature {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .gallery-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .page-intro {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .splash {
+    position: relative;
+    display: flex;
+    height: 700px;
+    margin: 0;
+    flex-direction: column;
+    padding: 0 24px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .page-intro {
+    margin: auto;
+    text-align: center;
+  }
+
+  .main-title {
+    color: #d2dae2;
+    font-size: 50px;
+    margin: 0;
+    font-weight: normal;
+    padding: 25px 10px;
+  }
+
+  .main-subtitle {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 12px 0 60px 0;
+  }
+
+  .btn {
+    padding: 25px 50px 25px 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .quotes-wrapper {
+    margin: 0 0 0 0;
+  }
+
+  .quote {
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .social-links {
+    text-align: center;
+  }
+}
